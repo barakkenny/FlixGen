@@ -1,11 +1,13 @@
-# Movies web + GPT
+# FlixGen + GPT
 
 - Installed vite
 - Configured TailwindCSS and Shadcn
+- Header
+- Login Form
 
 # Features 
 - Login/Sign Up
-    - Sign In / Sign Up Form
+    - Sign In / Sign up Form
     - redirect to the Browse Page
 - Browse (User needs to be authenticated to gain access)
   - Header
