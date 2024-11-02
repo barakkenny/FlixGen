@@ -1,0 +1,1 @@
+export const USER_AVATAR = "https://cdn-icons-png.flaticon.com/512/6596/6596121.png"

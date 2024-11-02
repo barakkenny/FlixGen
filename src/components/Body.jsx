@@ -1,28 +1,29 @@
-import React from 'react'
-import Login from './Login'
-import Browse from './Browse'
-import { createBrowserRouter } from 'react-router-dom'
-import { RouterProvider } from 'react-router-dom'
+import { useEffect } from "react";
+import Login from "./Login";
+import Browse from "./Browse";
+import { createBrowserRouter } from "react-router-dom";
+import { RouterProvider } from "react-router-dom";
 
 const Body = () => {
 
-    const appRouter = createBrowserRouter([
-        {
-            path: "/",
-            element: <Login />
-        },
-        {
-            path: "/browse",
-            element: <Browse />
-        }
-    ])
-  return (
-    <div className='bg-black'>
-    <div className="bg-[url('/netflix-bg.jpg')]">
-      <RouterProvider router={appRouter}/>
-    </div>
-    </div>
-  )
-}
+  const appRouter = createBrowserRouter([
+    {
+      path: "/",
+      element: <Login />,
+    },
+    {
+      path: "/browse",
+      element: <Browse />,
+    },
+  ]);
 
-export default Body
+
+
+  return (
+    <div className="bg-black w-screen">
+      <RouterProvider router={appRouter} />
+    </div>
+  );
+};
+
+export default Body;
