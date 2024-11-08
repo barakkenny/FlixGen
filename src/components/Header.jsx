@@ -42,7 +42,7 @@ const Header = () => {
   }, []);
 
   return (
-    <div className="px-24 py-4 flex justify-between ">
+    <div className="px-24 py-3 flex justify-between bg-gradient-to-r from-black">
       <Link to="/">
         <h1 className="text-2xl font-bold text-red-600">FlixGen</h1>
       </Link>

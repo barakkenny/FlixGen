@@ -2,7 +2,6 @@ import { useRef, useState } from "react";
 import Header from "./Header";
 import { Input } from "./ui/input";
 import { Button } from "@/components/ui/button";
-import { Link } from "react-router-dom";
 import { checkValidData } from "@/utils/validate";
 import { createUserWithEmailAndPassword, signInWithEmailAndPassword, updateProfile } from "firebase/auth";  
 import { auth } from "@/utils/firebase";
@@ -33,7 +32,7 @@ const Login = () => {
     if(message) return;
 
     if(!isSignInForm){
-      createUserWithEmailAndPassword(auth, email.current.value, password.current.value)
+      createUserWithEmailAndPassword(auth, name.current.value, email.current.value, password.current.value)
   .then((userCredential) => {
     updateProfile(auth.currentUser, {
       displayName: name.current.value, photoURL: USER_AVATAR
@@ -67,6 +66,7 @@ const Login = () => {
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
+        return user
       })
       .catch((error) => {
         const errorCode = error.code;

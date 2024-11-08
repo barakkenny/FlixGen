@@ -1,4 +1,4 @@
-import { useEffect } from "react";
+
 import Login from "./Login";
 import Browse from "./Browse";
 import { createBrowserRouter } from "react-router-dom";
@@ -20,7 +20,7 @@ const Body = () => {
 
 
   return (
-    <div className="bg-black w-screen">
+    <div className=" w-screen">
       <RouterProvider router={appRouter} />
     </div>
   );
