@@ -8,3 +8,5 @@ headers: {
   Authorization: 'Bearer eyJhbGciOiJIUzI1NiJ9.eyJhdWQiOiIzOGZkMGFmOWEzNjRlNDVmZjY1NmZiMGNiMGEwOGM4MCIsIm5iZiI6MTczMDYzMzM1MC43MDA5MDI3LCJzdWIiOiI2MzI4ODA4MTBjMTI1NTAwN2QyOTgxNWMiLCJzY29wZXMiOlsiYXBpX3JlYWQiXSwidmVyc2lvbiI6MX0.gO2cHd7-fELjjZqcOwYyN1slrumsw8T7n9Em3E7K8mk'
 }
 };
+
+export const CARD_IMAGE_URL = "https://image.tmdb.org/t/p/w500"

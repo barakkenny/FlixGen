@@ -78,7 +78,7 @@ const Login = () => {
   };
 
   return (
-    <div className="bg-[url('/sci-fi.jpg')] bg-center bg-cover">
+    <div className="bg-[url('/sci-fi.jpg')] bg-center bg-cover w-full h-screen">
       <Header />
 
       <div className="flex items-center justify-center mt-8 text-white font-inter">
